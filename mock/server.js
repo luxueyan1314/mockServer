@@ -54,11 +54,11 @@ config.forEach(({ method, url, data }) => {
 });
 
 // 支持自定义端口
-let port = 8081;
+let port = 7890;
 process.argv.forEach((arg, index, arr) => {
     console.log("arg----------", arg);
     if (arg === "--port") {
-        port = arr[index + 1] || 8081;
+        port = arr[index + 1] || 7890;
         return false;
     }
 });
