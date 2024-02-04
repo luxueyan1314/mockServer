@@ -31,3 +31,23 @@ module.exports = {
 3、若想自定义接口，请在api中新建js文件并根据mockjsApi(http://mockjs.com) 进行配置。
 
 
+增加WebSocket接口
+
+在项目中可使用下面代码链接WebSocket服务
+``` 
+this.ws = new WebSocket('ws://127.0.0.1:8999')
+this.ws.onopen = () => {
+  console.log('WebSocket connected')
+}
+this.ws.onmessage = (e) => {
+  console.log('WebSocket received message:', e.data)
+}
+this.ws.onclose = () => {
+  console.log('WebSocket closed')
+}
+this.ws.onerror = () => {
+  console.log('WebSocket error')
+}
+```
+
+

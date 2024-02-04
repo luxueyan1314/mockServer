@@ -7,3 +7,4 @@
 //     console.log('Example app listening at http://%s:%s', host, port);
 // });
 var server = require("./mock/server.js");
+var webscoket = require("./mock/webscoket.js");

@@ -6,6 +6,7 @@ const Mock = require("mockjs");
 const multipartMiddleware = multipart();
 const app = express();
 
+
 // 定义mock方法
 const mock = (data, params) => {
     if (Object.prototype.toString.call(data) === "[object Object]") {
